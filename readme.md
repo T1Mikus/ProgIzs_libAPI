@@ -136,6 +136,7 @@
    * Base URL : http://localhost:8080/books
    * Required body JSON properties : title(String), genre(String), pages(int), author(String), publisher(String), copies(int), releaseDate(String), libraryId(UUID)
    * Optional body JSON properties : none
+   * Date string must be in format "yyyy-MM-dd"
 
 #### Method PUT
 
@@ -145,6 +146,7 @@
    * Parameter `id` in url is id of the book
    * Required body JSON properties : title(String), genre(String), pages(int), author(String), publisher(String), copies(int), releaseDate(String), libraryId(UUID)
    * Optional body JSON properties : none
+   * Date string must be in format "yyyy-MM-dd"
 
 #### Method DELETE
 
