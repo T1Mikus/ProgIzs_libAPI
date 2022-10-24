@@ -39,7 +39,6 @@ public class BookReservationService {
 
     public void updateBookReservation(UUID id, BookReservationDTO bookReservationDTO){
         BookReservation updatedBookReservation = new BookReservation(bookReservationDTO);
-        System.out.println(bookReservationDTO);
         updatedBookReservation.setId(id);
         _bookReservationRepository.save(updatedBookReservation);
     }
