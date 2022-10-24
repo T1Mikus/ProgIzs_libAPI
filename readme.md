@@ -16,7 +16,7 @@
 ## Use of endpoint
 
 * Base URL : http://localhost:8080
-
+----
 ### Requests for signUp
 
 #### Method POST
@@ -26,7 +26,7 @@
    * Base URL : http://localhost:8080/auth/signup
    * Required JSON properties : name(String), surname(Stirng), contactPhone(int), email(String), password(String), isWorker(boolean)(false if user), library(UUID)(if it is worker)
    * Optional JSON properties : none
-
+----
 ### Requests for signIn
 
 #### Method POST
@@ -36,7 +36,7 @@
    * Base URL : http://localhost:8080/auth/signin
    * Required JSON properties : email(String), password(String), isWorker(boolean)(false if user)
    * Optional JSON properties : none
-
+----
 ### Requests for users
 
 #### Method GET
@@ -74,7 +74,7 @@
 
    * Base URL : http://localhost:8080/users/id
    * Parameter `id` in url is id of the user
-
+----
 ### Requests for workers
 
 #### Method GET
@@ -112,7 +112,7 @@
 
    * Base URL : http://localhost:8080/workers/id
    * Parameter `id` in url is id of the worker
-
+----
 ### Requests for books
 
 #### Method GET
@@ -149,7 +149,7 @@
 
    * Base URL : http://localhost:8080/books/id
    * Parameter `id` in url is id of the book
-
+----
 ### Requests for libraries
 
 #### Method GET
@@ -186,7 +186,7 @@
 
    * Base URL : http://localhost:8080/libraries/id
    * Parameter `id` in url is id of the library
-
+----
 ### Requests for bookReservations
 
 #### Method GET
@@ -225,3 +225,4 @@
 
    * Base URL : http://localhost:8080/bookReservations/id
    * Parameter `id` in url is id of the bookReservation
+----
