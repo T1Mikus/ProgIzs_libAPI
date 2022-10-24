@@ -1,6 +1,7 @@
 package com.sj.libAPI.models.entities;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sj.libAPI.models.DTO.UserDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,6 +35,15 @@ public class User extends BaseEntity {
         this.contactPhone = dto.getContactPhone();
         this.email = dto.getEmail();
         this.password = dto.getPassword();
+    }
+
+    @JsonProperty("isAdmin")
+    public boolean getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(boolean admin) {
+        isAdmin = admin;
     }
 
 }

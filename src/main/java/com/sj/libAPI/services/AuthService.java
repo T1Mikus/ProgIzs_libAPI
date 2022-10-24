@@ -93,6 +93,7 @@ public class AuthService {
             newUser.setContactPhone(data.getContactPhone());
             newUser.setEmail(data.getEmail().toLowerCase(Locale.ROOT));
             newUser.setPassword(_encoder.encode(data.getPassword()));
+            newUser.setIsAdmin(false);
             _userRepository.save(newUser);
 
         }
