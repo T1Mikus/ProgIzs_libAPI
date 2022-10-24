@@ -208,8 +208,8 @@
 1. **Add bookReservation**
 
    * Base URL : http://localhost:8080/bookReservations
-   * Required body JSON properties : isReturned(boolean), bookId(UUID), userId(UUID)
-   * Optional body JSON properties : workerId(UUID), borrowDate(String)(Sets date to current date), returnDate(String)(Always adds 1 week to borrow date when adding new)
+   * Required body JSON properties : bookId(UUID), userId(UUID)
+   * Optional body JSON properties : isReturned(boolean)(Sets to false at adding new), workerId(UUID), borrowDate(String)(Sets date to current date), returnDate(String)(Always adds 1 week to borrow date when adding new)
    * Date string must be in format "yyyy-MM-dd"
 
 #### Method PUT
