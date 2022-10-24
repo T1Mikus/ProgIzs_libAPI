@@ -13,7 +13,7 @@
 3. Clone repository
 4. Add `application.properties` file to the path `src/main/resources/`
 5. Run project
-6. If project is successfully compiled then it will start on http://localhost:8080
+6. If project is successfully compiled then endpoint will start on http://localhost:8080
 
 ## Use of endpoint
 
