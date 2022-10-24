@@ -26,6 +26,6 @@ public class WorkerDTO {
     private String password = null;
 
     @NotNull
-    private UUID library;
+    private UUID libraryId;
 
 }

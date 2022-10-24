@@ -70,7 +70,7 @@ public class Book {
         this.publisher = dto.getPublisher();
         this.copies = dto.getCopies();
         this.releaseDate = LocalDate.parse(dto.getReleaseDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        this.library = new Library(dto.getLibrary());
+        this.library = new Library(dto.getLibraryId());
     }
 
 }

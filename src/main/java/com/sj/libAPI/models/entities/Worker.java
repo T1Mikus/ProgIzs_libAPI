@@ -38,7 +38,7 @@ public class Worker extends BaseEntity {
         this.contactPhone = dto.getContactPhone();
         this.email = dto.getEmail();
         this.password = dto.getPassword();
-        this.library = new Library(dto.getLibrary());
+        this.library = new Library(dto.getLibraryId());
     }
 
 }

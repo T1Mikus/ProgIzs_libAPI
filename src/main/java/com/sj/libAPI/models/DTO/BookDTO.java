@@ -32,6 +32,6 @@ public class BookDTO {
     private String releaseDate;
 
     @NotNull
-    private UUID library;
+    private UUID libraryId;
 
 }
