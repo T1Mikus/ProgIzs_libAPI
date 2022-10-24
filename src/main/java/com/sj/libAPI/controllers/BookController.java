@@ -4,6 +4,7 @@ import com.sj.libAPI.models.DTO.BookDTO;
 import com.sj.libAPI.models.entities.Book;
 import com.sj.libAPI.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,9 +17,18 @@ public class BookController {
     @Autowired
     private BookService _bookService;
 
+    /*@GetMapping
+    public List<Book> getAllBooks(Model model) {
+        var books =  _bookService.getAllBooks();
+        model.addAttribute("books", books);
+        System.out.println(books);
+        return books;
+    }*/
     @GetMapping
-    public List<Book> getAllBooks() {
-        return _bookService.getAllBooks();
+    public String getAllBooks(Model model) {
+        var books = (List<Book>) _bookService.getAllBooks();
+        model.addAttribute("books", books);
+        return "books";
     }
 
     @GetMapping("{id}")
