@@ -26,16 +26,18 @@
    * Base URL : http://localhost:8080/auth/signup
    * Required JSON properties : name(String), surname(Stirng), contactPhone(int), email(String), password(String), isWorker(boolean)(false if user), library(UUID)(if it is worker)
    * Optional JSON properties : none
+   * Returns 'true' if operation is successful, if no then 'false'
 ----
 ### Requests for signIn
 
 #### Method POST
 
-1. **SignIp for user or worker**
+1. **SignIn for user or worker**
 
    * Base URL : http://localhost:8080/auth/signin
    * Required JSON properties : email(String), password(String), isWorker(boolean)(false if user)
    * Optional JSON properties : none
+   * Returns 'true' if operation is successful, if no then 'false'
 ----
 ### Requests for users
 
