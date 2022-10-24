@@ -10,9 +10,10 @@
 
 1. Download Java v17+ on your computer
 2. Use IntelliJ IDEA, Eclipse, Visual Studio Code or another IDE
-3. Add `application.properties` file to the path `src/main/resources/`
-4. Run project
-5. If project is successfully compiled then it will start on http://localhost:8080
+3. Clone repository
+4. Add `application.properties` file to the path `src/main/resources/`
+5. Run project
+6. If project is successfully compiled then it will start on http://localhost:8080
 
 ## Use of endpoint
 
