@@ -10,7 +10,7 @@
 
 1. Download Java v17+ on your computer
 2. Use IntelliJ IDEA, Eclipse, Visual Studio Code or another IDE
-3. Add application.properties file to the path 'src/main/resources/'
+3. Add `application.properties` file to the path `src/main/resources/`
 4. Run project
 5. If project is successfully compiled then it will start on http://localhost:8080
 
@@ -25,9 +25,9 @@
 1. **SignUp for user or worker**
 
    * Base URL : http://localhost:8080/auth/signup
-   * Required JSON properties : name(String), surname(Stirng), contactPhone(int), email(String), password(String), isWorker(boolean)(false if user), library(UUID)(if it is worker)
+   * Required JSON properties : name(String), surname(String), contactPhone(int), email(String), password(String), isWorker(boolean)(false if user), library(UUID)(if it is worker)
    * Optional JSON properties : none
-   * Returns 'true' if operation is successful, if no then 'false'
+   * Returns `true` if operation is successful, if no then `false`
 ----
 ### Requests for signIn
 
@@ -38,7 +38,7 @@
    * Base URL : http://localhost:8080/auth/signin
    * Required JSON properties : email(String), password(String), isWorker(boolean)(false if user)
    * Optional JSON properties : none
-   * Returns 'true' if operation is successful, if no then 'false'
+   * Returns `true` if operation is successful, if no then `false`
 ----
 ### Requests for users
 
