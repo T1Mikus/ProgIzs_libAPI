@@ -57,8 +57,8 @@
 1. **Add user**
 
    * Base URL : http://localhost:8080/users
-   * Required body JSON properties : name(String), surname(String), contactPhone(int), email(String)
-   * Optional body JSON properties : password(String)
+   * Required body JSON properties : name(String), surname(String), contactPhone(int), email(String), password(String)
+   * Optional body JSON properties : none
    * There is SignUp request(see above)
 
 #### Method PUT
@@ -95,8 +95,8 @@
 1. **Add worker**
 
    * Base URL : http://localhost:8080/workers
-   * Required body JSON properties : name(String), surname(String), contactPhone(int), email(String), libraryId(UUID)
-   * Optional body JSON properties : password(String)
+   * Required body JSON properties : name(String), surname(String), contactPhone(int), email(String), libraryId(UUID), password(String)
+   * Optional body JSON properties : none
    * There is SignUp request(see above)
 
 #### Method PUT
