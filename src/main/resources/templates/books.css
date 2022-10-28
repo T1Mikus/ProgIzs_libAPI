@@ -27,14 +27,9 @@ body {
     margin: 0;
 }
 
-.container{
- 
-}
-
 .navigation-container {
  
     background-color: var(--darkgreen);
-    margin: 20px;
     padding: 10px;
     margin-top: 0px;
     margin-left: 0px;
@@ -71,6 +66,24 @@ body {
     background-color: var(--darkgreen);
 }
 */
+
+/*
+ * Filter/Search bar
+ */
+.search-bar{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    background-color:var(--white);
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+}
+
+.search-bar input{
+    width: 300px;
+    margin-left: 30px;
+}
 .main-container {
     padding-left: 50px;
     padding-right: 50px;
@@ -103,10 +116,16 @@ body {
     height: fit-content;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     align-content: center;
     background-color: var(--lightbeige);
     border-radius: 5px;
+}
+
+.selectBook{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 175px;
 }
 
 /*
@@ -117,6 +136,7 @@ body {
     border-radius: 5px;
     margin-left: 25px;
     margin-top: 10px;
+    display: inline-block;
 }
 
 /* On hover, deeper shadow */
@@ -127,7 +147,7 @@ body {
 .bookDetails {
     margin-top: 0px;
     padding-top: 0px;
-    padding: 0px 16px;
+    padding-left: 15px;
     padding-bottom: 1px;
 }
 
