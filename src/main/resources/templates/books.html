@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Books</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <title>Books</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="books.css" />
+    </head>
 
-<body>
-<h2>List of Books</h2>
-
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Author</th>
-    </tr>
-
-    <tr th:each="book : ${books}">
-        <td th:text="${book.id}">Id</td>
-        <td th:text="${book.title}">Title</td>
-        <td th:text="${book.author}">Author</td>
-    </tr>
-</table>
-
-</body>
+    <body>
+        <div class="navigation-container">
+            <nav>
+                <a class="current-page" href="books">View Books</a>
+                <a href="books">View Books</a>
+                <a href="books">View Books</a>
+                <a href="books">View Books</a>
+                <!--section>Settings</section-->
+            </nav>
+        </div>
+        <div class="main-container">
+            <!--table>
+                <tr th:each="book : ${books}">
+                    <td th:text="${book.id}">Id</td>
+                    <td th:text="${book.title}">Title</td>
+                    <td th:text="${book.author}">Author</td>
+                </tr>
+            </table-->
+            <div class="bookList">
+                <div class="bookCard">
+                    <img
+                        src="https://media.istockphoto.com/vectors/abstract-minimal-geometric-circle-background-for-business-annual-vector-id1210701957?k=20&m=1210701957&s=612x612&w=0&h=FcOUXSrxlHnJztn-U_JSQ0X-VyyUtLKRV4QXSHfprvs="
+                        alt="Book"
+                    />
+                    <div class="bookDetails">
+                        <h4><b>Harry Potter</b></h4>
+                        <p>A young wizard founds out about his powers...</p>
+                    </div>
+                </div>
+                <div class="bookCard">
+                    <img
+                        src="https://media.istockphoto.com/vectors/abstract-minimal-geometric-circle-background-for-business-annual-vector-id1210701957?k=20&m=1210701957&s=612x612&w=0&h=FcOUXSrxlHnJztn-U_JSQ0X-VyyUtLKRV4QXSHfprvs="
+                        alt="Book"
+                    />
+                    <div class="bookDetails">
+                        <h4><b>Harry Potter</b></h4>
+                        <p>A young wizard founds out about his powers...</p>
+                    </div>
+                </div>
+                <div class="bookCard">
+                    <img
+                        src="https://media.istockphoto.com/vectors/abstract-minimal-geometric-circle-background-for-business-annual-vector-id1210701957?k=20&m=1210701957&s=612x612&w=0&h=FcOUXSrxlHnJztn-U_JSQ0X-VyyUtLKRV4QXSHfprvs="
+                        alt="Book"
+                    />
+                    <div class="bookDetails">
+                        <h4><b>Harry Potter</b></h4>
+                        <p>A young wizard founds out about his powers...</p>
+                    </div>
+                </div>
+                <div class="bookCard">
+                    <img
+                        src="https://media.istockphoto.com/vectors/abstract-minimal-geometric-circle-background-for-business-annual-vector-id1210701957?k=20&m=1210701957&s=612x612&w=0&h=FcOUXSrxlHnJztn-U_JSQ0X-VyyUtLKRV4QXSHfprvs="
+                        alt="Book"
+                    />
+                    <div class="bookDetails">
+                        <h4><b>Harry Potter</b></h4>
+                        <p>A young wizard founds out about his powers...</p>
+                    </div>
+                </div>
+                <div class="bookCard">
+                    <img
+                        src="https://media.istockphoto.com/vectors/abstract-minimal-geometric-circle-background-for-business-annual-vector-id1210701957?k=20&m=1210701957&s=612x612&w=0&h=FcOUXSrxlHnJztn-U_JSQ0X-VyyUtLKRV4QXSHfprvs="
+                        alt="Book"
+                    />
+                    <div class="bookDetails">
+                        <h4><b>Harry Potter</b></h4>
+                        <p>A young wizard founds out about his powers...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="credits">lorem ipsum biblioteka @book co. 2022</div>
+    </body>
 </html>
