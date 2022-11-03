@@ -17,19 +17,20 @@ public class BookController {
     @Autowired
     private BookService _bookService;
 
-    /*@GetMapping
+    @GetMapping
     public List<Book> getAllBooks(Model model) {
-        var books =  _bookService.getAllBooks();
+        var books = _bookService.getAllBooks();
         model.addAttribute("books", books);
         System.out.println(books);
         return books;
-    }*/
-    @GetMapping
+    }
+
+    /*@GetMapping
     public String getAllBooks(Model model) {
         var books = (List<Book>) _bookService.getAllBooks();
         model.addAttribute("books", books);
         return "books";
-    }
+    }*/
 
     @GetMapping("{id}")
     public Book getBookById(@PathVariable UUID id){
